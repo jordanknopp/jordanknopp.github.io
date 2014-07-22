@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tentative]]></title>
-  <link href="http://jordanknopp.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: None | Tentative]]></title>
+  <link href="http://jordanknopp.github.io/blog/categories/none/atom.xml" rel="self"/>
   <link href="http://jordanknopp.github.io/"/>
   <updated>2014-07-21T19:21:19-07:00</updated>
   <id>http://jordanknopp.github.io/</id>
