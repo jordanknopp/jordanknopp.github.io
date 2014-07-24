@@ -1,0 +1,46 @@
+Elliptic Curves
+
+Background:
+- Finite field
+- Group
+- Abelian Group
+- Equation form
+
+
+
+Arithmetic Rules
+1.  If P=0:
+-P := 0
+P+Q = Q
+(0 is additive identity)
+
+2.  If P=(x,y)
+-P = -(x,y) := (x,-y)
+Obvious from (1) that (x,-y) will be on the curve if (x,y) is  [show this!]
+
+3.  If P and Q have different x coordinates:
+PQ intersects in exactly one point, R, unless line is tangent and then R=P or R=Q, wherever tangency is)
+Then P+Q=-R
+
+4.  If Q = -P
+P + Q = 0  (forced by rule 2)
+
+5.  If P = Q
+Let l be tangent line at to curve at P
+Let R be the only other point of intersection of l with the curve
+P + Q := -R
+(R is taken to be P if P is a point of inflection..."double tangency")
+
+
+
+How is a cryptosystem constructed from this?
+Many cryptosystems in finite fields rely on the discrete logarithm problem for their security/difficulty.  
+Elliptical curve cryptography does as well.  Adding points in elliptic curves is analogous to multiplying numbers in finite fields (conventional mathematics).
+But remember the equation of elliptical curves is y^2 = x^3 + ax + b...so this certainly involves discrete logarithm problem as well.
+
+
+Why might this be useful for cryptography?
+What's important is that since math within an elliptic curve is defined differently...the strongest techniques developed for use in finite fields do not seem to work on elliptic curves [180].
+This ultimately means that reasonable security can be achieved with smaller key sizes.  Given the computational power we have these days, this isn't exactly a monumentous victory.
+At the same time, computer security has become something of a popular topic recently (Snowden -> NSA, Prism, etc.).  It is entirely possible that encryption will become a standard practice in everyday data transfer.
+If that is the case, every efficiency can and should be welcomed.
